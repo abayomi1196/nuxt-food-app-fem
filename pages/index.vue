@@ -1,6 +1,6 @@
 <template>
   <main class="container">
-    <h1>Hi from home page</h1>
+    <AppHeader />
   </main>
 </template>
 
