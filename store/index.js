@@ -37,7 +37,7 @@ export const actions = {
           commit('updateFoodData', data)
         })
     } catch (err) {
-      console.error(err)
+      console.log(err)
     }
   },
 }
