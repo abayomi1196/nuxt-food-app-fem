@@ -33,11 +33,8 @@ export const actions = {
       )
         .then((res) => res.json())
         .then((data) => {
-          console.log(data)
           commit('updateFoodData', data)
         })
-    } catch (err) {
-      console.log(err)
-    }
+    } catch (err) {}
   },
 }
