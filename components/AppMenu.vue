@@ -5,6 +5,8 @@
 
       <li><nuxt-link to="/restaurants">Restaurants</nuxt-link></li>
     </ul>
+
+    <nuxt-link to="/cart">Cart</nuxt-link>
   </nav>
 </template>
 
