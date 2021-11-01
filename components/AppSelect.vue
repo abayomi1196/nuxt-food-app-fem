@@ -24,7 +24,7 @@ export default {
     },
     selectOptions: {
       type: Array,
-      default: () => ['tacos', 'pizza', 'sim sum'],
+      default: () => ['tacos', 'pizza', 'dim sum'],
     },
   },
 }
