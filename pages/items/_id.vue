@@ -48,6 +48,15 @@
           <label :for="addon">{{ addon }}</label>
         </div>
       </fieldset>
+
+      <!-- toast component -->
+      <AppToast v-if="cartSubmitted">
+        <p>
+          Order submitted <br />
+          Check out more
+          <nuxt-link to="/restaurants">restaurants</nuxt-link>
+        </p>
+      </AppToast>
     </section>
 
     <section class="options">
@@ -87,6 +96,16 @@ export default {
       }
 
       return result
+    },
+
+    combinedPrice() {
+      const total = this.count * this.currentItem.price
+      return total.toFixed(2)
+    },
+  },
+  methods: {
+    addToCart() {
+      this.cartSubmitted = true
     },
   },
 }
