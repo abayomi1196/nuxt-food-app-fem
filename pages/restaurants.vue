@@ -1,11 +1,21 @@
 <template>
   <main class="container restaurant">
-    <h1 class="restaurant-heading">Restaurants</h1>
+    <div class="restaurant-heading">
+      <h1>Restaurants</h1>
+
+      <AppSelect @change="selectedRestaurant = $event" />
+    </div>
 
     <AppRestaurantInfo />
   </main>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      selectedRestaurant: '',
+    }
+  },
+}
 </script>
