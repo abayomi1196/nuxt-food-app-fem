@@ -38,7 +38,13 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
+
+    '@nuxtjs/composition-api/module',
   ],
+
+  generate: {
+    interval: 2000,
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [],
