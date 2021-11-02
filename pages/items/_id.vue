@@ -124,7 +124,7 @@ export default {
 .container {
   max-width: 1000px;
   margin: 100px auto;
-  padding: 0 20px;
+  padding: 40px 20px;
   display: grid;
   grid-template-columns: 400px 1fr;
   grid-template-rows: 400px 1fr;
